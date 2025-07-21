@@ -7,7 +7,33 @@
   import Players from './components/Players.svelte';
   import Statistics from './components/Statistics.svelte';
   import FAQ from './components/FAQ.svelte';
-  import Footer from './components/Footer.svelte';
+  import    <div clas    <div class="easter-egg-grid">
+      <button class="easter-egg-btn" on:click={activateBarrelRollEgg}>
+        🏏 Spin Bowl
+      </button>
+      <button class="easter-egg-btn" on:click={activateDutchAngleEgg}>
+        🥅 Slip Catch
+      </button>
+      <button class="easter-egg-btn" on:click={activateSupermanEgg}>
+        🏏 Power Hit
+      </button>
+      <button class="easter-egg-btn" on:click={activateBoundaryEgg}>
+        🎯 Boundary
+      </button>
+    </div>grid">
+      <button class="easter-egg-btn" on:click={activateBarrelRollEgg}>
+        Spin Bowl
+      </button>
+      <button class="easter-egg-btn" on:click={activateDutchAngleEgg}>
+        Slip Catch
+      </button>
+      <button class="easter-egg-btn" on:click={activateSupermanEgg}>
+         Diving Catch
+      </button>
+      <button class="easter-egg-btn" on:click={activateBoundaryEgg}>
+         Boundary
+      </button>
+    </div>./components/Footer.svelte';
   import BackToTop from './components/BackToTop.svelte';
 
   // Easter Egg states
@@ -64,7 +90,7 @@
   
   function activateBarrelRoll() {
     isBarrelRolling = true;
-    showMessage("🌀 Do a barrel roll! Website is spinning!");
+    showMessage("BOWLED! The website spins like a perfect leg-break delivery!");
     setTimeout(() => {
       isBarrelRolling = false;
     }, 4000);
@@ -72,7 +98,7 @@
   
   function activateDutchAngle() {
     isDutchAngle = true;
-    showMessage("📐 Dutch angle activated! Everything's tilted!");
+    showMessage("CAUGHT BEHIND! The fielder tilts to take a stunning slip catch!");
     setTimeout(() => {
       isDutchAngle = false;
     }, 5000);
@@ -80,7 +106,7 @@
   
   function activateSupermanMode() {
     isSupermanMode = true;
-    showMessage("✈️ Flying mode activated! Soaring through the cricket clouds!");
+    showMessage("🏏 MASSIVE HIT! The batsman swings with power for a towering six!");
     setTimeout(() => {
       isSupermanMode = false;
     }, 6000);
@@ -88,7 +114,7 @@
   
   function activateBoundaryMode() {
     isBoundaryMode = true;
-    showMessage("🚀 BOUNDARY! Six runs! The crowd goes wild!");
+    showMessage("BOUNDARY! Four runs! The crowd is ecstatic!");
     setTimeout(() => {
       isBoundaryMode = false;
     }, 5000);
@@ -440,7 +466,7 @@
     <h3>🎮 Easter Eggs</h3>
     <div class="easter-egg-grid">
       <button class="easter-egg-btn" on:click={activateBarrelRollEgg}>
-        🌪️ Barrel Roll
+        � Spin Bowl
       </button>
       <button class="easter-egg-btn" on:click={activateDutchAngleEgg}>
         📐 Dutch Angle
