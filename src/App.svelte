@@ -7,33 +7,7 @@
   import Players from './components/Players.svelte';
   import Statistics from './components/Statistics.svelte';
   import FAQ from './components/FAQ.svelte';
-  import    <div clas    <div class="easter-egg-grid">
-      <button class="easter-egg-btn" on:click={activateBarrelRollEgg}>
-        🏏 Spin Bowl
-      </button>
-      <button class="easter-egg-btn" on:click={activateDutchAngleEgg}>
-        🥅 Slip Catch
-      </button>
-      <button class="easter-egg-btn" on:click={activateSupermanEgg}>
-        🏏 Power Hit
-      </button>
-      <button class="easter-egg-btn" on:click={activateBoundaryEgg}>
-        🎯 Boundary
-      </button>
-    </div>grid">
-      <button class="easter-egg-btn" on:click={activateBarrelRollEgg}>
-        Spin Bowl
-      </button>
-      <button class="easter-egg-btn" on:click={activateDutchAngleEgg}>
-        Slip Catch
-      </button>
-      <button class="easter-egg-btn" on:click={activateSupermanEgg}>
-         Diving Catch
-      </button>
-      <button class="easter-egg-btn" on:click={activateBoundaryEgg}>
-         Boundary
-      </button>
-    </div>./components/Footer.svelte';
+  import Footer from './components/Footer.svelte';
   import BackToTop from './components/BackToTop.svelte';
 
   // Easter Egg states
@@ -466,16 +440,16 @@
     <h3>🎮 Easter Eggs</h3>
     <div class="easter-egg-grid">
       <button class="easter-egg-btn" on:click={activateBarrelRollEgg}>
-        � Spin Bowl
+        Spin Bowl
       </button>
       <button class="easter-egg-btn" on:click={activateDutchAngleEgg}>
-        📐 Dutch Angle
+        Slip Catch
       </button>
       <button class="easter-egg-btn" on:click={activateSupermanEgg}>
-        ✈️ Flying Mode
+        Power Hit
       </button>
       <button class="easter-egg-btn" on:click={activateBoundaryEgg}>
-        🎯 Boundary Mode
+        Boundary
       </button>
     </div>
   </div>
